@@ -42,7 +42,7 @@
  export default {
   name: 'Racers',
 
-     data: () => ({
+    data: () => ({
       racersDisplay: [],
       id: null,
       racers: []
