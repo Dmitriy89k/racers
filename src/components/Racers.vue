@@ -1,6 +1,6 @@
 <template>
     <div>
-    <el-table
+      <el-table
             :data="racersDisplay"
             style="width: 100%">
         <el-table-column
@@ -24,7 +24,7 @@
                 <a v-bind:href= getUrl(scope.$index)>Wiki</a>
             </template>
         </el-table-column>
-    </el-table>
+      </el-table>
         <div class="block">
             <el-pagination
                     layout="prev, pager, next"
