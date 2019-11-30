@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+   <div id="app">
+     <h1>Drivers F1</h1>
+     <Racers/>
+   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Racers from './components/Racers.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    components: {
+      Racers
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.4;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    color: lightgray;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  }
 </style>
